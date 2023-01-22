@@ -23,8 +23,11 @@
             <img src="./imagens/bate-papo.jpg">
         </div>
         <div>
-            <button onclick="abrirChat()">
-                <ion-icon name="people"></ion-icon>
+            <button class="icone-chat" 
+            onclick="abrirChat()">
+            <ion-icon name="people"></ion-icon>
+                </button>
+                
         </div>
     </div>
     <div class="chat">
@@ -32,24 +35,23 @@
 
         </ul>
 
-        <div class="conversa-enviada"></div>
-        <div class="conversa-acao"></div>
-        <div class="conversa-reservada"></div>
+        
 
     </div>
 
     <div class="caixa-texto">
         <div class="entrada">
-           <textarea class="mensagem">Escreva aqui...</textarea> 
-           <button onclick="enviarMensagem()" class="botao-enviar">
-                <ion-icon class="navbar-paper-plane" name="paper-plane-outline"></ion-icon>
-            </div>
+           <textarea placeholder="Escreva aqui..." class="mensagem"></textarea> 
+           
+           <button class="botao-enviar" onclick="enviarMensagem()">
+            <ion-icon class="navbar-paper-plane" name="paper-plane-outline"></ion-icon></button>
+           
         </div>
     </div>
 
-
-    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
     <script src="script.js"></script>
 </body>
 

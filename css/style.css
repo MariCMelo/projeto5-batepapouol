@@ -22,7 +22,7 @@ img {
 }
 
 
-button {
+.icone-chat {
     top: 18px;
     left: 310px;
     font-size: 45px;
@@ -67,7 +67,8 @@ button {
     width: 375px;
     height: 40px;
     border-radius: 2px;
-    background-color: #DCDCDC;
+    background-color: red;
+
 }
 
 .caixa-texto {
@@ -92,9 +93,13 @@ button {
     line-height: 1.5;
 }
 
-.chat {}
+.chat {
+    color:red
+}
 
-.mensagensEnviadas {}
+.mensagensEnviadas {
+    color: green;
+}
 
 
 .navbar-paper-plane {
@@ -104,6 +109,15 @@ button {
     align-items: center;
     z-index: 3;
 
+}
+
+.botao-enviar{
+    size: 50px;
+    top: 5px;
+
+    align-items: center;
+    z-index: 3;
+   
 }
 
 @media (max-width: 375px) {
