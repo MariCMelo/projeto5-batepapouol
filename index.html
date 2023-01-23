@@ -23,7 +23,7 @@
             <img src="./imagens/bate-papo.jpg">
         </div>
         <div>
-            <button class="icone-chat" 
+            <button data-test="open-participants" class="icone-chat" 
             onclick="abrirChat()">
             <ion-icon name="people"></ion-icon>
                 </button>
@@ -41,7 +41,7 @@
 
     <div class="caixa-texto">
         <div class="entrada">
-           <textarea placeholder="Escreva aqui..." class="mensagem"></textarea> 
+           <textarea data-test="recipient" placeholder="Escreva aqui..." class="mensagem"></textarea> 
            
            <button class="botao-enviar" onclick="enviarMensagem()">
             <ion-icon class="navbar-paper-plane" name="paper-plane-outline"></ion-icon></button>

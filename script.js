@@ -51,12 +51,12 @@ function exibeMensagens() {
     for (let index = 0; index < mensagem.length; index++) {
 
         let template = `
-        <li>
-            ${mensagem[index].from}
-            ${mensagem[index].text}
-            ${mensagem[index].to}
-            ${mensagem[index].time}
-            ${mensagem[index].type}
+        <li class = "conversa-enviada">
+       <span class = "hora"> (${mensagem[index].time}) </span>
+       <span class = "de">${mensagem[index].from} </span>
+       <span class = "mensagem-escrita">${mensagem[index].text}</span>
+       <span class = "para">  ${mensagem[index].to} </span>
+       <span class = "tipo">${mensagem[index].type}</tipo>
             </li>
             `
         lista.innerHTML = lista.innerHTML + template;

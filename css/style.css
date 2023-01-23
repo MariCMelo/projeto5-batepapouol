@@ -7,7 +7,7 @@ body {
     width: 375px;
     height: 80px;
     filter: drop-shadow(0px 4px 3px rgba(0, 0, 0, 0.25));
-    background-color: aqua;
+    background-color: white;
 
 }
 
@@ -45,14 +45,33 @@ img {
 
 
 .chat {
-    background-color: aquamarine;
+    width: 375px;
+    height: 440px;
+    padding-top: 30px;
+    padding-bottom: 90px;
 
+}
+
+.nome{
+    font-weight: 700;
+    margin-right: 3px;
+}
+
+.tempo{
+    color:  #AAAAAA;
+    font-size: 14px;
+    margin-right: 8px;
 }
 
 .conversa-enviada {
     width: 375px;
     height: 40px;
     border-radius: 2px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    display: flex;
+    align-items: center;
+    margin-top: 2px;
     background-color: #fff;
 }
 
@@ -60,6 +79,11 @@ img {
     width: 375px;
     height: 40px;
     border-radius: 2px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    display: flex;
+    align-items: center;
+    margin-top: 2px;
     background-color: #FFDEDE;
 }
 
@@ -67,12 +91,17 @@ img {
     width: 375px;
     height: 40px;
     border-radius: 2px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    display: flex;
+    align-items: center;
+    margin-top: 2px;
     background-color: red;
 
 }
 
 .caixa-texto {
-    background-color: rgb(136, 136, 41);
+    background-color: white;
     width: 375px;
     height: 80px;
     bottom: 0px;
@@ -85,26 +114,27 @@ img {
     resize: 0;
     min-height: 30px;
     max-height: 30px;
-    min-width: 145px;
-    max-width: 145px;
+    min-width: 245px;
+    max-width: 245px;
     margin: 15px;
     padding: 5px;
     resize: 0;
     line-height: 1.5;
+    border: transparent;
+    font-size: 18px ;
+    font-weight: 400;
+    font-style: italic;
 }
 
-.chat {
-    color:red
-}
 
 .mensagensEnviadas {
-    color: green;
+    color: black;
 }
 
 
 .navbar-paper-plane {
     size: 50px;
-    top: 5px;
+    top: 30px;
 
     align-items: center;
     z-index: 3;
@@ -114,10 +144,17 @@ img {
 .botao-enviar{
     size: 50px;
     top: 5px;
-
     align-items: center;
     z-index: 3;
+
    
+}
+
+.mensagem{
+    border: transparent;
+    font-size: 18px ;
+    font-weight: 400;
+    font-style: italic;
 }
 
 @media (max-width: 375px) {
